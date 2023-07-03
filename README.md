@@ -6,13 +6,13 @@ As a part time lifeguard and a software engineer, I have decided to challenge my
 Once I layout my wireframe and set up diagram, I will then implement the time and add visual effects to each detail.
 
 ## Technologies Used
--React
--Javascript
+- React
+- Javascript
 
 ## Wireframe
 
 ## MVP Goals
-
+- 
 
 ## Stretch Goals
 ## Post Project Reflection
