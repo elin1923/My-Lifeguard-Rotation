@@ -12,6 +12,8 @@ Once I layout my wireframe and set up diagram, I will then implement the time an
 ## Wireframe
 
 ## MVP Goals
+
+
 ## Stretch Goals
 ## Post Project Reflection
 ## Sources Used
