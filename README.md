@@ -16,6 +16,8 @@ Once I layout my wireframe and set up diagram, I will then implement the time an
 - Color in the current time and display who is on stand
 
 ## Stretch Goals
+- Allow the user to input parameters (rotation duration, number of rotations, stands per rotation)
+- Grey out timestamps in the past
 
 ## Post Project Reflection
 ## Sources Used
