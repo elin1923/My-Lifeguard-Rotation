@@ -12,8 +12,10 @@ Once I layout my wireframe and set up diagram, I will then implement the time an
 ## Wireframe
 
 ## MVP Goals
-- 
+- Display and list out all of the timestamps
+- Color in the current time and display who is on stand
 
 ## Stretch Goals
+
 ## Post Project Reflection
 ## Sources Used
