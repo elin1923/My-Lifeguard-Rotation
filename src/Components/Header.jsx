@@ -6,7 +6,9 @@ export default function Header() {
             <h1>
                 Lifeguard Rotation  
             </h1>
-            <input type='number' placeholder='# of rotation'></input>
+            <input type='radio' name='rotation'></input>
+            <input type='radio' name='rotation'></input>
+            <input type='radio' name='rotation'></input>
             <input type='number' placeholder='# of stands'></input>
             <input type='number' placeholder='Duration'></input>
         </div>
