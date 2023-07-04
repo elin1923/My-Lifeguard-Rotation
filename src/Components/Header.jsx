@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <div className='header'>
             <h1>
-                Lifeguard    
+                Lifeguard Rotation  
             </h1>
             <input type='number' placeholder='# of rotation'></input>
             <input type='number' placeholder='# of stands'></input>
