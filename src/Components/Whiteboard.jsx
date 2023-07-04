@@ -1,6 +1,6 @@
 export default function Whiteboard() {
     return (
-        <div>
+        <div className="whiteboard">
             whiteboardga
         </div>
     )
