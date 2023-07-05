@@ -5,13 +5,13 @@ export default function Header() {
 
     var [clock, setClock] = useState(new Date());
     
-    useEffect(() => {
-        var timer = setInterval( () => setClock(new Date()), 1000 )
-        return function cleanup() {
-            clearInterval(timer)
-        }
+    // useEffect(() => {
+    //     var timer = setInterval( () => setClock(new Date()), 1000 )
+    //     return function cleanup() {
+    //         clearInterval(timer)
+    //     }
     
-    });
+    // });
 
     return (
         <div className='header'>
