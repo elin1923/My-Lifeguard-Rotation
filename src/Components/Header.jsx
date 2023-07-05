@@ -25,7 +25,8 @@ export default function Header() {
                 <input type='number' placeholder='# of stands'></input>
                 <input type='number' placeholder='Duration'></input>
             </div>
-            <div>
+            
+            <div className='clock'>
                 {clock.toLocaleTimeString()}
             </div>
         </div>
