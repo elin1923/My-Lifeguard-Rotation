@@ -4,6 +4,11 @@
   display: flex;
 }
 
+.parameters {
+  align-items: center;
+  justify-content: center;
+}
+
 .clock {
   margin: 0 auto;
   text-align: center;
