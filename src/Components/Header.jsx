@@ -3,6 +3,7 @@ import '../App.css';
 export default function Header() {
 
     const date = new Date()
+    const clock = date.getHours() + ':' + date.getMinutes()
 
     return (
         <div className='header'>
