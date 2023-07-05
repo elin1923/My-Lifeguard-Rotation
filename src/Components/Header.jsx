@@ -24,7 +24,7 @@ export default function Header() {
 
     // decrement
     const handleDecrement = () => {
-        setStand(stands + 1)
+        setStand(stands - 1)
     }
 
     return (
