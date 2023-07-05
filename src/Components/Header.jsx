@@ -3,10 +3,10 @@ import React, {useState, useEffect} from 'react';
 
 export default function Header() {
 
-    var [date,setDate] = useState(new Date());
+    var [date, setDate] = useState(new Date());
     
     useEffect(() => {
-        var timer = setInterval(()=>setDate(new Date()), 1000 )
+        var timer = setInterval( () => setDate(new Date()), 1000 )
         return function cleanup() {
             clearInterval(timer)
         }
@@ -26,7 +26,7 @@ export default function Header() {
                 <input type='number' placeholder='Duration'></input>
             </div>
             <div>
-                {}
+                {date}
             </div>
         </div>
     )
