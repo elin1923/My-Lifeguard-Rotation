@@ -1,9 +1,10 @@
 import '../App.css';
+import React, {useState, useEffect} from 'react';
 
 export default function Header() {
 
     const date = new Date()
-    const clock = date.getHours() + ':' + date.getMinutes()
+    const clock = date.getHours() + ':' + date.getMinutes() + ":" + date.getSeconds()
 
     return (
         <div className='header'>
