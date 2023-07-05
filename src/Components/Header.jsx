@@ -13,6 +13,8 @@ export default function Header() {
     
     // });
 
+    let [stands, setStand] = useState();
+
     return (
         <div className='header'>
             <h1>
@@ -24,7 +26,14 @@ export default function Header() {
                 <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-2' checked></input>
                 <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-3'></input> */}
                 <form className='parameters'>
-                    <input type='number' placeholder='# of stands'></input>
+                    <div>
+                        <div>
+                            # of stands
+                        </div>
+                        <span class="input-number-decrement">–</span>
+                        <input class="input-number" type="text" value={stands} min="0" max="10"></input>
+                        <span class="input-number-increment">+</span>
+                    </div>
                     <input type='number' placeholder='# of guards'></input>
                     <input type="time" id="appt" placeholder='start'></input>
                     <input type="time" id="appt" placeholder='end'></input>
