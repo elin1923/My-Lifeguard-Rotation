@@ -3,7 +3,16 @@ import React, {useState, useEffect} from 'react';
 
 export default function Header() {
 
- 
+    var [date,setDate] = useState(new Date());
+    
+    useEffect(() => {
+        var timer = setInterval(()=>setDate(new Date()), 1000 )
+        return function cleanup() {
+            clearInterval(timer)
+        }
+    
+    });
+
     return (
         <div className='header'>
             <h1>
@@ -17,7 +26,7 @@ export default function Header() {
                 <input type='number' placeholder='Duration'></input>
             </div>
             <div>
-                {clock}
+                {}
             </div>
         </div>
     )
