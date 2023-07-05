@@ -13,17 +13,18 @@ export default function Header() {
     
     // });
 
-    let [stands, setStand] = useState();
+    let [stands, setStand] = useState(1);
 
 
     // increment
     const handleIncrement = () => {
-        setStand += 1
+        setStand(stands + 1)
+        console.log('yes')
     }
 
     // decrement
     const handleDecrement = () => {
-        setStand -= 1
+        setStand(stands + 1)
     }
 
     return (
@@ -41,7 +42,7 @@ export default function Header() {
                         <div>
                             # of stands
                         </div>
-                        <span class="input-number-decrement" onClick={}>–</span>
+                        <span class="input-number-decrement" onClick={handleDecrement}>–</span>
                         <input class="input-number" type="text" value={stands} min="0" max="10"></input>
                         <span class="input-number-increment" onClick={handleIncrement}>+</span>
                     </div>
