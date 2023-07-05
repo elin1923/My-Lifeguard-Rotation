@@ -18,7 +18,7 @@ export default function Header() {
                 <input type='number' placeholder='Duration'></input>
             </div>
             <div>
-                time
+                {clock}
             </div>
         </div>
     )
