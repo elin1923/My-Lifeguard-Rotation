@@ -1,6 +1,9 @@
 import '../App.css';
 
 export default function Header() {
+
+    const date = new Date()
+
     return (
         <div className='header'>
             <h1>
@@ -12,6 +15,9 @@ export default function Header() {
                 <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-3'></input>
                 <input type='number' placeholder='# of stands'></input>
                 <input type='number' placeholder='Duration'></input>
+            </div>
+            <div>
+                time
             </div>
         </div>
     )
