@@ -19,9 +19,10 @@ export default function Header() {
                 Lifeguard Rotation  
             </h1>
             <div>
-                <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-1'></input>
+                {/* number of rotation will be stretch goal */}
+                {/* <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-1'></input>
                 <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-2' checked></input>
-                <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-3'></input>
+                <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-3'></input> */}
                 <input type='number' placeholder='# of stands'></input>
                 <input type='number' placeholder='# of guards'></input>
                 <form>
