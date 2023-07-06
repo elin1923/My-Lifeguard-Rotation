@@ -64,7 +64,13 @@ export default function Header() {
                         <input class="input-number" type="text" value={guards} min="0" max="10"></input>
                         <span class="input-number-increment" onClick={handleGuardIncrement}>+</span>
                     </div>
-                    <input type="time" id="appt" placeholder='start'></input>
+                    <div>
+                        <div>
+                            Start
+                        </div>
+                        <input type="time" id="appt" placeholder='start'></input>
+                    </div>
+                    
                     <input type="time" id="appt" placeholder='end'></input>
                     <input type='number' placeholder='Duration'></input>
                     <input type='submit'></input>
