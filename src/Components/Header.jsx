@@ -16,13 +16,13 @@ export default function Header() {
     let [stands, setStand] = useState(1);
 
 
-    // increment
+    // stand increment
     const handleIncrement = () => {
         setStand(stands + 1)
-        console.log('yes')
+        // console.log('yes')
     }
 
-    // decrement
+    // stand decrement
     const handleDecrement = () => {
         setStand(stands - 1)
     }
