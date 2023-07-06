@@ -70,4 +70,16 @@
 /* === !! === Whiteboard === !! === */
 .whiteboard {
   background-color: beige ;
+  height: 80vh;
+  padding: 20px;
+
+  border: solid red 2px;
+}
+
+.name {
+  border: solid #444 2px;
+}
+
+.timeStamps {
+  border: solid #444 2px;
 }
