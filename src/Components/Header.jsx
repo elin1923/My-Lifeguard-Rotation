@@ -15,6 +15,7 @@ export default function Header() {
 
     let [stands, setStand] = useState(1);
     let [guards, setGuard] = useState(1);
+    let [duration, setDuration] = useState(1);
 
 
     // stand increment
@@ -70,8 +71,20 @@ export default function Header() {
                         </div>
                         <input type="time" id="appt" placeholder='start'></input>
                     </div>
-                    
-                    <input type="time" id="appt" placeholder='end'></input>
+                    <div>
+                        <div>
+                            End
+                        </div>
+                        <input type="time" id="appt" placeholder='end'></input>
+                    </div>
+                    <div>
+                        <div>
+                            # of guards
+                        </div>
+                        <span class="input-number-decrement" onClick={handleGuardDecrement}>–</span>
+                        <input class="input-number" type="text" value={guards} min="0" max="10"></input>
+                        <span class="input-number-increment" onClick={handleGuardIncrement}>+</span>
+                    </div>
                     <input type='number' placeholder='Duration'></input>
                     <input type='submit'></input>
                 </form>
