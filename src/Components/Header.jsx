@@ -38,6 +38,16 @@ export default function Header() {
         setGuard(guards - 1)
     }
 
+    // duration Increment
+    const handleDurationIncrement = () => {
+        setDuration(duration + 1)
+    }
+
+    // duration decrement
+    const handleDurationDecrement = () => {
+        setDuration(duration - 1)
+    }
+
     return (
         <div className='header'>
             <h1>
@@ -79,11 +89,11 @@ export default function Header() {
                     </div>
                     <div>
                         <div>
-                            # of guards
+                            Duration
                         </div>
-                        <span class="input-number-decrement" onClick={handleGuardDecrement}>–</span>
-                        <input class="input-number" type="text" value={guards} min="0" max="10"></input>
-                        <span class="input-number-increment" onClick={handleGuardIncrement}>+</span>
+                        <span class="input-number-decrement" onClick={handleDurationDecrement}>–</span>
+                        <input class="input-number" type="text" value={duration} min="0" max="10"></input>
+                        <span class="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
                     <input type='number' placeholder='Duration'></input>
                     <input type='submit'></input>
