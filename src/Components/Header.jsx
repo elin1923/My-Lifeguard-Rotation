@@ -15,7 +15,7 @@ export default function Header() {
 
     let [stands, setStand] = useState(1);
     let [guards, setGuard] = useState(1);
-    let [duration, setDuration] = useState(1);
+    let [duration, setDuration] = useState(15);
 
 
     // stand increment
