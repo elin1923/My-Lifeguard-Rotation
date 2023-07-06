@@ -14,17 +14,27 @@ export default function Header() {
     // });
 
     let [stands, setStand] = useState(1);
+    let [guards, setGuard] = useState(1);
 
 
     // stand increment
-    const handleIncrement = () => {
+    const handleStandIncrement = () => {
         setStand(stands + 1)
         // console.log('yes')
     }
 
     // stand decrement
-    const handleDecrement = () => {
+    const handleStandDecrement = () => {
         setStand(stands - 1)
+    }
+
+    // guard increment
+    const handleGuardIncrement = () => {
+        setGuard(guards + 1)
+    }
+    // guard decrement
+    const handleGuardDecrement = () => {
+        setGuard(guards - 1)
     }
 
     return (
@@ -42,9 +52,17 @@ export default function Header() {
                         <div>
                             # of stands
                         </div>
-                        <span class="input-number-decrement" onClick={handleDecrement}>–</span>
+                        <span class="input-number-decrement" onClick={handleStandDecrement}>–</span>
                         <input class="input-number" type="text" value={stands} min="0" max="10"></input>
-                        <span class="input-number-increment" onClick={handleIncrement}>+</span>
+                        <span class="input-number-increment" onClick={handleStandIncrement}>+</span>
+                    </div>
+                    <div>
+                        <div>
+                            # of guards
+                        </div>
+                        <span class="input-number-decrement" onClick={handleGuardDecrement}>–</span>
+                        <input class="input-number" type="text" value={stands} min="0" max="10"></input>
+                        <span class="input-number-increment" onClick={handleGuardIncrement}>+</span>
                     </div>
                     <input type='number' placeholder='# of guards'></input>
                     <input type="time" id="appt" placeholder='start'></input>
