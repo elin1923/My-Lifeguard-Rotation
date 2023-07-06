@@ -77,6 +77,14 @@ export default function Header() {
                     </div>
                     <div>
                         <div>
+                            Duration
+                        </div>
+                        <span class="input-number-decrement" onClick={handleDurationDecrement}>–</span>
+                        <input class="input-number" type="text" value={duration} min="0" max="10"></input>
+                        <span class="input-number-increment" onClick={handleDurationIncrement}>+</span>
+                    </div>
+                    <div>
+                        <div>
                             Start
                         </div>
                         <input type="time" id="appt" placeholder='start'></input>
@@ -86,14 +94,6 @@ export default function Header() {
                             End
                         </div>
                         <input type="time" id="appt" placeholder='end'></input>
-                    </div>
-                    <div>
-                        <div>
-                            Duration
-                        </div>
-                        <span class="input-number-decrement" onClick={handleDurationDecrement}>–</span>
-                        <input class="input-number" type="text" value={duration} min="0" max="10"></input>
-                        <span class="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
                     <input type='submit'></input>
                 </form>
