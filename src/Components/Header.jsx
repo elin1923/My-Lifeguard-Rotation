@@ -95,7 +95,6 @@ export default function Header() {
                         <input class="input-number" type="text" value={duration} min="0" max="10"></input>
                         <span class="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
-                    <input type='number' placeholder='Duration'></input>
                     <input type='submit'></input>
                 </form>
             </div>
