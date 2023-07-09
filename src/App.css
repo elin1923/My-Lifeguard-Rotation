@@ -74,6 +74,9 @@
   padding: 20px;
 
   border: solid red 2px;
+
+  display: flex;
+
 }
 
 .name {
