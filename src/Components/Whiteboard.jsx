@@ -6,8 +6,10 @@ export default function Whiteboard() {
             <div className="name">
                 dd
             </div>
-            <div className="timeStamps">
-                jskl
+            <div className="whiteBoardTimeStamps">
+                <div className="timeStamp">
+
+                </div>
             </div>
         </div>
     )
