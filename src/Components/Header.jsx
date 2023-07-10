@@ -48,6 +48,9 @@ export default function Header() {
         setDuration(duration - 1)
     }
 
+    const handleGenerateForm = () => {
+        
+    }
     return (
         <div className='header'>
             <h1>
