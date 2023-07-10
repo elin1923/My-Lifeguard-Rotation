@@ -88,3 +88,8 @@
   border: solid #444 2px;
   width: 80%;
 }
+
+.timeStamp {
+  background-color: rgb(251, 251, 244);
+  border: solid black 2px;
+}
