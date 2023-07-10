@@ -67,7 +67,7 @@ export default function Header() {
                             # of stands
                         </div>
                         <span class="input-number-decrement" onClick={handleStandDecrement}>–</span>
-                        <input class="input-number" type="text" value={stands} min="0" max="10"></input>
+                        <input class="input-number" type="text" value={stands} min="0" max="10" aria-readonly></input>
                         <span class="input-number-increment" onClick={handleStandIncrement}>+</span>
                     </div>
                     <div>
@@ -75,7 +75,7 @@ export default function Header() {
                             # of guards
                         </div>
                         <span className="input-number-decrement" onClick={handleGuardDecrement}>–</span>
-                        <input className="input-number" type="text" value={guards} min="0" max="10"></input>
+                        <input className="input-number" type="text" value={guards} min="0" max="10" aria-readonly></input>
                         <span className="input-number-increment" onClick={handleGuardIncrement}>+</span>
                     </div>
                     <div>
@@ -83,7 +83,7 @@ export default function Header() {
                             Duration
                         </div>
                         <span className="input-number-decrement" onClick={handleDurationDecrement}>–</span>
-                        <input className="input-number" type="text" value={duration} min="0" max="10"></input>
+                        <input className="input-number" type="text" value={duration} min="0" max="10" aria-readonly></input>
                         <span className="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
                     <div>
