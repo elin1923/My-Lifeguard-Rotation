@@ -92,4 +92,10 @@
 .timeStamp {
   background-color: rgb(251, 251, 244);
   border: solid black 2px;
+  text-align: center;
+
+  width: 5%;
+
+  margin: 20px;
+  padding: 20px;
 }
