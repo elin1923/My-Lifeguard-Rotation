@@ -49,7 +49,7 @@ export default function Header() {
     }
 
     const handleGenerateForm = () => {
-        
+        console.log('submitted')
     }
     return (
         <div className='header'>
@@ -74,17 +74,17 @@ export default function Header() {
                         <div>
                             # of guards
                         </div>
-                        <span class="input-number-decrement" onClick={handleGuardDecrement}>–</span>
-                        <input class="input-number" type="text" value={guards} min="0" max="10"></input>
-                        <span class="input-number-increment" onClick={handleGuardIncrement}>+</span>
+                        <span className="input-number-decrement" onClick={handleGuardDecrement}>–</span>
+                        <input className="input-number" type="text" value={guards} min="0" max="10"></input>
+                        <span className="input-number-increment" onClick={handleGuardIncrement}>+</span>
                     </div>
                     <div>
                         <div>
                             Duration
                         </div>
-                        <span class="input-number-decrement" onClick={handleDurationDecrement}>–</span>
-                        <input class="input-number" type="text" value={duration} min="0" max="10"></input>
-                        <span class="input-number-increment" onClick={handleDurationIncrement}>+</span>
+                        <span className="input-number-decrement" onClick={handleDurationDecrement}>–</span>
+                        <input className="input-number" type="text" value={duration} min="0" max="10"></input>
+                        <span className="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
                     <div>
                         <div>
