@@ -48,7 +48,10 @@ export default function Header() {
         setDuration(duration - 1)
     }
 
-    const handleGenerateForm = () => {
+    const handleGenerateForm = e => {
+        e.preventDefault()
+
+        console.log('submitted')
         console.log('submitted')
     }
     return (
@@ -61,7 +64,7 @@ export default function Header() {
                 {/* <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-1'></input>
                 <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-2' checked></input>
                 <input type='radio' name='rotation' className='btn btn-scale btn-scale-asc-3'></input> */}
-                <form className='parameters' onSubmit={handleGenerateForm}>
+                <form className='parameters' onSubmit={handleGenerateForm} id='userForm'>
                     <div>
                         <div>
                             # of stands
