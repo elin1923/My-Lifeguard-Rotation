@@ -7,8 +7,9 @@ export default function Whiteboard() {
                 dd
             </div>
             <div className="whiteBoardTimeStamps">
+                m
                 <div className="timeStamp">
-
+                    12:00
                 </div>
             </div>
         </div>
