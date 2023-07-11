@@ -59,10 +59,7 @@ export default function Header() {
         console.log(start)
     }
 
-    // 
-    const handleStartGuard = () => {
-        setStart(start)
-    }
+
     return (
         <div className='header'>
             <h1>
@@ -98,7 +95,7 @@ export default function Header() {
                         <input className="input-number" type="text" value={duration} min="0" max="10" aria-readonly></input>
                         <span className="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
-                    
+
                     <div>
                         <div>
                             Start
