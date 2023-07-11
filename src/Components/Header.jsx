@@ -109,7 +109,9 @@ export default function Header() {
                         <div>
                             End
                         </div>
-                        <input type="time" id='endTime' value={end}></input>
+                        <input type="time" id='endTime' value={end} onChange={
+                            (e) => setEnd(e.target.value)}>
+                        </input>
                     </div>
                     <input type='submit'></input>
                 </form>
