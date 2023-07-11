@@ -60,8 +60,8 @@ export default function Header() {
     }
 
     // 
-    const handleStartGuard = (e) => {
-        setStart(e)
+    const handleStartGuard = () => {
+        setStart(start)
     }
     return (
         <div className='header'>
@@ -98,17 +98,20 @@ export default function Header() {
                         <input className="input-number" type="text" value={duration} min="0" max="10" aria-readonly></input>
                         <span className="input-number-increment" onClick={handleDurationIncrement}>+</span>
                     </div>
+                    
                     <div>
                         <div>
                             Start
                         </div>
-                        <input type="time" id="appt" placeholder='start' onChange={handleStartGuard}></input>
+                        <input type="time" id="startTime" value={start} onChange={
+                            (e) => setStart(e.target.value)}>
+                        </input>
                     </div>
                     <div>
                         <div>
                             End
                         </div>
-                        <input type="time" id="appt" placeholder='end'></input>
+                        <input type="time" ></input>
                     </div>
                     <input type='submit'></input>
                 </form>
