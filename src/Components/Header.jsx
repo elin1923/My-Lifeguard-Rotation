@@ -16,6 +16,9 @@ export default function Header() {
     let [stands, setStand] = useState(1);
     let [guards, setGuard] = useState(1);
     let [duration, setDuration] = useState(15);
+    
+    let [start, setStart] = useState();
+    let [end, setEnd] = useState();
 
 
     // stand increment
@@ -52,7 +55,7 @@ export default function Header() {
         e.preventDefault()
 
         console.log('submitted')
-        console.log('submitted')
+        console.log(start)
     }
     return (
         <div className='header'>
@@ -93,7 +96,7 @@ export default function Header() {
                         <div>
                             Start
                         </div>
-                        <input type="time" id="appt" placeholder='start'></input>
+                        <input type="time" id="appt" value={start} placeholder='start'></input>
                     </div>
                     <div>
                         <div>
