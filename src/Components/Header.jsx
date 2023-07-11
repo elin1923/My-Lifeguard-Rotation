@@ -104,11 +104,12 @@ export default function Header() {
                             (e) => setStart(e.target.value)}>
                         </input>
                     </div>
+
                     <div>
                         <div>
                             End
                         </div>
-                        <input type="time" ></input>
+                        <input type="time" id='endTime' value={end}></input>
                     </div>
                     <input type='submit'></input>
                 </form>
