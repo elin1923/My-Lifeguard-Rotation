@@ -17,7 +17,7 @@ export default function Header() {
     let [guards, setGuard] = useState(1);
     let [duration, setDuration] = useState(15);
     
-    let [start, setStart] = useState();
+    let [start, setStart] = useState('12:00');
     let [end, setEnd] = useState();
 
 
