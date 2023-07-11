@@ -57,6 +57,10 @@ export default function Header() {
         console.log('submitted')
         console.log(start)
     }
+
+    const handleStartGuard = () => {
+
+    }
     return (
         <div className='header'>
             <h1>
@@ -96,7 +100,7 @@ export default function Header() {
                         <div>
                             Start
                         </div>
-                        <input type="time" id="appt" value={start} placeholder='start'></input>
+                        <input type="time" id="appt" value={start} placeholder='start' onChange={handleStartGuard}></input>
                     </div>
                     <div>
                         <div>
