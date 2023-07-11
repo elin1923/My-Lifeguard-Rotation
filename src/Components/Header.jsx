@@ -57,7 +57,18 @@ export default function Header() {
 
         console.log('submitted')
         console.log(start)
-        console.log(start + 15)
+        console.log()
+    }
+
+    // fastforward to future
+    const handleFastForward = () => {
+        const translateStartTime = new Date(start)
+        translateStartTime.setMinutes(translateStartTime.getMinutes() + duration)
+
+        const formattedTime = translateStartTime.toTimeString().slice(0, 5)
+        setStart(formattedTime)
+
+
     }
 
 
