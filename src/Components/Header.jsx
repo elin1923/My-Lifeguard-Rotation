@@ -18,7 +18,7 @@ export default function Header() {
     let [duration, setDuration] = useState(15);
     
     let [start, setStart] = useState('12:00');
-    let [end, setEnd] = useState('6:00');
+    let [end, setEnd] = useState('06:00');
 
 
     // stand increment
