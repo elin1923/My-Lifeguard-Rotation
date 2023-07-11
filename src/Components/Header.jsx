@@ -57,7 +57,7 @@ export default function Header() {
 
         console.log('submitted')
         console.log(start)
-        console.log()
+
     }
 
     // fastforward to future
