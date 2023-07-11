@@ -60,8 +60,8 @@ export default function Header() {
     }
 
     // 
-    const handleStartGuard = () => {
-        setStart()
+    const handleStartGuard = (e) => {
+        setStart(e)
     }
     return (
         <div className='header'>
