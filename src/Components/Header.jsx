@@ -51,6 +51,7 @@ export default function Header() {
         setDuration(duration - 1)
     }
 
+    // submit
     const handleGenerateForm = e => {
         e.preventDefault()
 
@@ -58,8 +59,9 @@ export default function Header() {
         console.log(start)
     }
 
+    // 
     const handleStartGuard = () => {
-
+        setStart()
     }
     return (
         <div className='header'>
@@ -100,7 +102,7 @@ export default function Header() {
                         <div>
                             Start
                         </div>
-                        <input type="time" id="appt" value={start} placeholder='start' onChange={handleStartGuard}></input>
+                        <input type="time" id="appt" placeholder='start' onChange={handleStartGuard}></input>
                     </div>
                     <div>
                         <div>
