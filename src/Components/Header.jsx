@@ -57,6 +57,7 @@ export default function Header() {
 
         console.log('submitted')
         console.log(start)
+        console.log(start + 15)
     }
 
 
