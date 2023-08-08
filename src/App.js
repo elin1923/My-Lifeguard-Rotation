@@ -10,8 +10,8 @@ function App() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [receivedData, setReceivedData] = useState(null);
   
-  const handleDataReceived = (data) => {
-    setReceivedData(data);
+  const handleDataReceived = (stands) => {
+    setReceivedData(stands);
   };
 
   const handleGenerate = () => {
@@ -22,7 +22,7 @@ function App() {
     <div>
       <Header 
         onGenerate={handleGenerate}
-        sendDataToParent={handleDataReceived}
+        rotationDetails={handleDataReceived}
       />
       <h1>{receivedData}</h1>
       <Whiteboard 
