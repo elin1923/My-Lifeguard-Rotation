@@ -13,8 +13,12 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <Whiteboard />
+      <Header 
+        onGenerate={handleGenerate}
+      />
+      <Whiteboard 
+        isGenerating={isGenerating}
+      />
     </div>
   );
 }
