@@ -1,6 +1,8 @@
 
 import Header from './Components/Header.jsx';
 import Whiteboard from './Components/Whiteboard.jsx';
+
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
     <div>
       <Header 
         onGenerate={handleGenerate}
+        sendDataToParent={handleDataReceived}
       />
+      <h1>{receivedData}</h1>
       <Whiteboard 
         isGenerating={isGenerating}
       />
