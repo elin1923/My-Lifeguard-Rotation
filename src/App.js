@@ -4,6 +4,13 @@ import Whiteboard from './Components/Whiteboard.jsx';
 import './App.css';
 
 function App() {
+
+  const [isGenerating, setIsGenerating] = useState(false);
+
+  const handleGenerate = () => {
+    setIsGenerating(true);
+  };
+
   return (
     <div>
       <Header />

@@ -58,6 +58,7 @@ export default function Header() {
             console.log('CANNOT generate rotation')
         } else {
             console.log('this is the function where i will generate the rotation')
+            
         }
 
         console.log('submitted')
