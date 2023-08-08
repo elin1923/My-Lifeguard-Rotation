@@ -27,6 +27,7 @@ function App() {
       <h1>{receivedData}</h1>
       <Whiteboard 
         isGenerating={isGenerating}
+        receivedData={receivedData}
       />
     </div>
   );

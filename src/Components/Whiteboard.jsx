@@ -1,12 +1,12 @@
 
 
-export default function Whiteboard() {
+export default function Whiteboard({receivedData}) {
 
 
     return (
         <div className="whiteboard">
             
-
+            <h1>{receivedData}</h1>
 
             {/* <div className="name">
                 dd
