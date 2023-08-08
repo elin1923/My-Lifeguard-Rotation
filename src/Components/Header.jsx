@@ -54,6 +54,11 @@ export default function Header() {
     // submit
     const handleGenerateForm = e => {
         e.preventDefault()
+        if (stands >= guards) {
+            console.log('CANNOT generate rotation')
+        } else {
+            console.log('this is the function where i will generate the rotation')
+        }
 
         console.log('submitted')
         console.log(start)
