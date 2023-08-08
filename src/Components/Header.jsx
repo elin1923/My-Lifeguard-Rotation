@@ -1,7 +1,7 @@
 import '../App.css';
 import React, {useState, useEffect} from 'react';
 
-export default function Header() {
+export default function Header({rotationDetails}) {
 
     var [clock, setClock] = useState(new Date());
     
@@ -58,7 +58,7 @@ export default function Header() {
             console.log('CANNOT generate rotation')
         } else {
             console.log('this is the function where i will generate the rotation')
-            
+
         }
 
         console.log('submitted')
