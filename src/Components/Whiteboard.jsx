@@ -10,7 +10,8 @@ export default function Whiteboard({receivedData}) {
 
     // assign the guards a stand
 
-    
+    // create a timer to cue rotation
+
     return (
         <div className="whiteboard">
             {receivedData && (
