@@ -7,6 +7,10 @@ export default function Whiteboard({receivedData}) {
     // define a number of guards
 
     // create div based on the number of guards
+
+    // assign the guards a stand
+
+    
     return (
         <div className="whiteboard">
             {receivedData && (
