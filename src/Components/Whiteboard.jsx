@@ -9,6 +9,16 @@ export default function Whiteboard({receivedData}) {
     const guard = receivedData && receivedData.guards
 
     // create div based on the number of guards
+    const renderDivs = () => {
+        if (standValue) {
+          const divs = [];
+          for (let i = 0; i < standValue; i++) {
+            divs.push(<div key={i}>Div {i + 1}</div>);
+          }
+          return divs;
+        }
+        return null;
+      };
 
     // assign the guards a stand
 
@@ -22,7 +32,6 @@ export default function Whiteboard({receivedData}) {
                     <h1>{guard}</h1>
                 </div>
             )}
-        
         </div>
     )
 }
