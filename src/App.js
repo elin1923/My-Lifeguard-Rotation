@@ -24,7 +24,7 @@ function App() {
         // onGenerate={handleGenerate}
         rotationDetails={handleDataReceived}
       />
-      <button onClick={() => console.log(receivedData)}></button>
+      
       <Whiteboard 
         // isGenerating={isGenerating}
         receivedData={receivedData}
