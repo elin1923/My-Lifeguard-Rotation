@@ -4,6 +4,7 @@ export default function Whiteboard({receivedData}) {
 
     // define a number of stands
 
+    // define a number of guards
     return (
         <div className="whiteboard">
             {receivedData && (
