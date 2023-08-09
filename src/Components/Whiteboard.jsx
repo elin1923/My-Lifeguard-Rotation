@@ -6,6 +6,7 @@ export default function Whiteboard({receivedData}) {
     const stand = receivedData && receivedData.stands
 
     // define a number of guards
+    const guard = receivedData && receivedData.guards
 
     // create div based on the number of guards
 
