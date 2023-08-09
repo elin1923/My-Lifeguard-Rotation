@@ -58,7 +58,7 @@ export default function Header({rotationDetails}) {
             console.log('CANNOT generate rotation')
         } else {
             console.log('this is the function where i will generate the rotation')
-            rotationDetails(stands);
+            rotationDetails({stands, guards});
         }
 
         console.log('submitted')

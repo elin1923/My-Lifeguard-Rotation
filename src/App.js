@@ -7,26 +7,26 @@ import './App.css';
 
 function App() {
 
-  const [isGenerating, setIsGenerating] = useState(false);
+  // const [isGenerating, setIsGenerating] = useState(false);
   const [receivedData, setReceivedData] = useState(null);
   
-  const handleDataReceived = (stands) => {
-    setReceivedData(stands);
+  const handleDataReceived = (data) => {
+    setReceivedData(data);
   };
 
-  const handleGenerate = () => {
-    setIsGenerating(true);
-  };
+  // const handleGenerate = () => {
+  //   setIsGenerating(true);
+  // };
 
   return (
     <div>
       <Header 
-        onGenerate={handleGenerate}
+        // onGenerate={handleGenerate}
         rotationDetails={handleDataReceived}
       />
-      <h1>{receivedData}</h1>
+      <button onClick={() => console.log(receivedData)}></button>
       <Whiteboard 
-        isGenerating={isGenerating}
+        // isGenerating={isGenerating}
         receivedData={receivedData}
       />
     </div>

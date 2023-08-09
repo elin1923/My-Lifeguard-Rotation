@@ -5,8 +5,17 @@ export default function Whiteboard({receivedData}) {
 
     return (
         <div className="whiteboard">
+            {receivedData && (
+                <div>
+                    <h1>{receivedData.stands}</h1>
+                </div>
+            )
             
-            <h1>{receivedData}</h1>
+
+
+            }
+
+            {/* <h1>{receivedData.guards}</h1> */}
 
             {/* <div className="name">
                 dd
