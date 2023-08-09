@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 
 
 export default function Whiteboard({receivedData}) {
@@ -10,9 +11,9 @@ export default function Whiteboard({receivedData}) {
 
     // create div based on the number of guards
     const renderDivs = () => {
-        if (standValue) {
+        if (stand) {
           const divs = [];
-          for (let i = 0; i < standValue; i++) {
+          for (let i = 0; i < stand; i++) {
             divs.push(<div key={i}>Div {i + 1}</div>);
           }
           return divs;
@@ -26,12 +27,9 @@ export default function Whiteboard({receivedData}) {
 
     return (
         <div className="whiteboard">
-            {receivedData && (
-                <div>
-                    <h1>{stand}</h1>
-                    <h1>{guard}</h1>
-                </div>
-            )}
+            <h1>{stand}</h1>
+            {guard}
+            {renderDivs}
         </div>
     )
 }
