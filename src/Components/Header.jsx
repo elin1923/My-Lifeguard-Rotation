@@ -61,7 +61,7 @@ export default function Header({rotationDetails}) {
             rotationDetails({stands, guards});
         }
 
-        console.log('submitted')
+        // console.log('submitted')
         console.log(start)
 
     }

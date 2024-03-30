@@ -10,13 +10,17 @@ export default function Whiteboard({receivedData}) {
     const guard = receivedData && receivedData.guards
 
     // create div based on the number of guards
-    const renderDivs = () => {
+    const renderTD = () => {
         if (stand) {
-          const divs = [];
-          for (let i = 0; i < stand; i++) {
-            divs.push(<div key={i}>Div {i + 1}</div>);
+          const data = [];
+          const row = stand + guard;
+          for (let i = 0; i < row; i++) {
+            data.push(
+            <tr key={i}>
+              <th><input></input></th>
+            </tr>);          
           }
-          return divs;
+          return data;
         }
         return null;
       };
@@ -27,9 +31,25 @@ export default function Whiteboard({receivedData}) {
 
     return (
         <div className="whiteboard">
-            <h1>{stand}</h1>
-            {guard}
-            {renderDivs}
+            <div>
+              <h1>{stand}</h1>
+            </div>
+            <div>
+              <h1>{guard}</h1>
+            </div>
+
+            <div>
+              <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+                {renderTD()}
+              </table>
+            </div>
+
+            {/* {renderDivs} */}
         </div>
     )
 }
